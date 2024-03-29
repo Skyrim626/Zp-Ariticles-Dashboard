@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- CDJNS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/buttons.css">
+
+</head>
+<body>
+
+  <!-- Add Loading Screen -->
+  
+  <main class="dashboard">
+    
+    <div class="sidebar">
+      <div class="logo">
+        <div class="logo-container">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <a href="#" class="logo-text">ZP articles</a>
+      </div>
+
+      <ul class="sidebar-navigation">
+        <li>
+          <a href="#" class="sidebar-link active">
+            <i class="fa-solid fa-qrcode"></i>
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-file-lines"></i>
+            My Articles
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-chart-column"></i>
+            Analytics
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-message"></i>
+            Inbox
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-calendar"></i>
+            Post Plan
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-sack-dollar"></i>
+            Earning
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-gear"></i>
+            Settings
+          </a>
+        </li>
+      </ul>
+
+      <p class="version-text">
+        Version 1.0.1
+      </p>
+
+    </div>
+
+    <div class="main-content-container">
+      <header class="header-navigation">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" class="search-input" placeholder="Search">
+        </div>
+
+        <div class="right-container">
+          <div class="right-container__icons">
+            <button>
+              <i class="fa-regular fa-comment"></i>
+            </button>
+            <button>
+              <i class="fa-regular fa-bell"></i>
+            </button>
+          </div>
+
+          <div class="dropdown-button">
+            <button class="profile-view-button">
+              <p>Sarah Snow</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="profile-container">
+              <img src="images/profile.svg" alt="">
+            </div>
+
+          </div>
+        </div>
+
+      </header>
+
+      <div class="content-page">
+
+        <div class="content-page__left-section">
+
+          <div class="welcome-user-container">
+
+            <div class="welcome-user__welcome-info">
+              <h1>Hello Sarah!</h1>
+              <p class="welcome-info__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum repudiandae similique modi aliquid nihil?</p>
+              <button class="btn btn-dark">Write new post</button>
+            </div>
+
+            <div class="welcome-user__welcome-image">
+              <img src="images/welcome-user.svg" alt="">
+            </div>
+
+          </div>
+
+          <article class="top-articles-container">
+            <div class="top-articles-header">
+              <h2>Top articles</h2>
+              <div class="dropdown-button">
+                <!-- Prefix Icon -->
+                <i class="fa-solid fa-calendar-days dropdown-button__prefix-icon"></i>
+
+                <button class="dropdown-button">
+                  <p>January</p>
+                  <!-- Suffix Icon -->
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+              </div>
+
+              
+
+            </div>
+
+            <!-- Articles -->
+            <div class="article-container">
+              <div class="article">
+                <p class="article-prefix__article-number">
+                  01
+                </p>
+                <div class="article__content-container">
+                  
+                  <div class="article-image">
+                    <img src="images/article-1.jpg" alt="">
+                  </div>
+  
+                  <div class="article-description">
+                    <p class="article-title">Disney's motion principle in designing interface animations</p>
+                    <p class="published-date">Jan 13, 2020</p>
+                  </div>
+  
+                </div>
+                
+                <div class="article-statuses">
+                  <div class="article-status seen">
+                    <i class="fa-regular fa-eye"></i>
+                    <p class="total-seen">6.5K</p>
+                  </div>
+                  <div class="article-status liked">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <p class="total-liked">3.4K</p>
+                  </div>
+                  <div class="article-status earnings">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <p class="total-earnings">34</p>
+                  </div>
+                </div>
+  
+                <div>
+  
+                </div>
+              </div>
+
+              <div class="article">
+                <p class="article-prefix__article-number">
+                  02
+                </p>
+                <div class="article__content-container">
+                  
+                  <div class="article-image">
+                    <img src="images/article-2.jpg" alt="">
+                  </div>
+  
+                  <div class="article-description">
+                    <p class="article-title">How Airbnb drives users actions with their landing page design...</p>
+                    <p class="published-date">Jan 13, 2020</p>
+                  </div>
+  
+                </div>
+                
+                <div class="article-statuses">
+                  <div class="article-status seen">
+                    <i class="fa-regular fa-eye"></i>
+                    <p class="total-seen">5.3K</p>
+                  </div>
+                  <div class="article-status liked">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <p class="total-liked">3.1K</p>
+                  </div>
+                  <div class="article-status earnings">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <p class="total-earnings">28</p>
+                  </div>
+                </div>
+  
+                <div>
+  
+                </div>
+              </div>
+
+              <div class="article">
+                <p class="article-prefix__article-number">
+                  03
+                </p>
+                <div class="article__content-container">
+                  
+                  <div class="article-image">
+                    <img src="images/article-3.jpg" alt="">
+                  </div>
+  
+                  <div class="article-description">
+                    <p class="article-title">It's Time for Tech to Ask 'Should We' Instead of 'Could We'</p>
+                    <p class="published-date">Jan 01, 2020</p>
+                  </div>
+  
+                </div>
+                
+                <div class="article-statuses">
+                  <div class="article-status seen">
+                    <i class="fa-regular fa-eye"></i>
+                    <p class="total-seen">3.1K</p>
+                  </div>
+                  <div class="article-status liked">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <p class="total-liked">2.2K</p>
+                  </div>
+                  <div class="article-status earnings">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <p class="total-earnings">25</p>
+                  </div>
+                </div>
+  
+                <div>
+  
+                </div>
+              </div>
+
+              <div class="article">
+                <p class="article-prefix__article-number">
+                  04
+                </p>
+                <div class="article__content-container">
+                  
+                  <div class="article-image">
+                    <img src="images/article-4.jpg" alt="">
+                  </div>
+  
+                  <div class="article-description">
+                    <p class="article-title">Facebook Creates 'Radioactive Images' and Other A.I...</p>
+                    <p class="published-date">Jan 10, 2020</p>
+                  </div>
+  
+                </div>
+                
+                <div class="article-statuses">
+                  <div class="article-status seen">
+                    <i class="fa-regular fa-eye"></i>
+                    <p class="total-seen">2.8K</p>
+                  </div>
+                  <div class="article-status liked">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <p class="total-liked">1.7K</p>
+                  </div>
+                  <div class="article-status earnings">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <p class="total-earnings">18</p>
+                  </div>
+                </div>
+  
+                <div>
+  
+                </div>
+              </div>
+            </div>
+
+            
+          </article>  
+
+        </div>
+
+        <div class="content-page__right-section">
+          
+          <div class="status bg-accent-lightblue">
+            <i class="fa-brands fa-bitcoin"></i>
+            <div class="status-description">
+              <p class="status-digit">$623</p>
+              <p class="status-category">Total earning</p>
+            </div>
+          </div>
+
+          <div class="status bg-accent-lightpurple">
+            <i class="fa-solid fa-pen-nib"></i>
+            <div class="status-description">
+              <p class="status-digit">13</p>
+              <p class="status-category">Article request</p>
+            </div>
+          </div>
+
+          <div class="status bg-accent-lightred ">
+            <i class="fa-regular fa-clock"></i>
+            <div class="status-description">
+              <p class="status-digit">03</p>
+              <p class="status-category">Pending articles</p>
+            </div>
+          </div>
+
+          <div class="calendar">
+
+            <div class="todays-article">
+              <p class="today-text">Today's article</p>
+              <div class="dropdown-button">
+                <!-- Prefix Icon -->
+                <i class="fa-solid fa-calendar-days dropdown-button__prefix-icon"></i>
+
+                <button class="dropdown-button">
+                  <p>January</p>
+                  <!-- Suffix Icon -->
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+              </div>
+            </div>
+
+            <div class="calendar__numbers">
+              <i class="fa-solid fa-chevron-left"></i>
+              <div class="week-number">
+                <p class="day">S</p>
+                <p>8</p>
+              </div>
+              <div class="week-number">
+                <p class="day">M</p>
+                <p>9</p>
+              </div>
+              <div class="week-number">
+                <p class="day">T</p>
+                <p>10</p>
+              </div>
+              <div class="week-number">
+                <p class="day">W</p>
+                <p class="current-day">11</p>
+              </div>
+              <div class="week-number">
+                <p class="day">TH</p>
+                <p>12</p>
+              </div>
+              <div class="week-number">
+                <p class="day">F</p>
+                <p>13</p>
+              </div>
+              <div class="week-number">
+                <p class="day">S</p>
+                <p>14</p>
+              </div>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="event-list">
+
+              <div class="event">
+                <p>12:30</p>
+                <div class="event-description">
+                  <p>Disney's motion principle in designing interface animation</p>
+                  <p class="assigned">Assigned by: <span>January 5</span></p>
+                </div>
+              </div>
+
+              <div class="event">
+                <p>12:30</p>
+                <div class="event-description">
+                  <p>Disney's motion principle in designing interface animation</p>
+                  <p class="assigned">Assigned by: <span>January 5</span></p>
+                </div>
+              </div>
+
+              <div class="event">
+                <p>12:30</p>
+                <div class="event-description">
+                  <p>Disney's motion principle in designing interface animation</p>
+                  <p class="assigned">Assigned by: <span>January 5</span></p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>

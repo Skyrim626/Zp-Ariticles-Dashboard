@@ -1,0 +1,29 @@
+
+/* Button */
+.btn {
+  padding: 1rem 4rem;
+}
+
+.btn-dark {
+  border-radius: 10px;
+  color: var(--clr-secondary);
+  background-color: var(--clr-primary-300);
+  letter-spacing: 2px;
+  font-weight: var(--fw-500);
+}
+
+/* Buttons with Prefix and Suffix */
+
+.dropdown-button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: transparent;
+}
+
+
+.btn-with-suffix {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
