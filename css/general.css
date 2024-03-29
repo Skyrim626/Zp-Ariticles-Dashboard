@@ -115,6 +115,8 @@ button {
   display: grid;
   grid-template-columns: 1fr 300px;
   column-gap: 1.2rem;
+
+  overflow-y: scroll;
 }
 
 .content-page__left-section {
