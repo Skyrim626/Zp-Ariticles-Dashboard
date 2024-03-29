@@ -249,11 +249,10 @@ button {
 /* Status */
 .status {
   border-radius: 10px;
-  height: 85px;
   display: grid;
   grid-template-columns: 60px 1fr;
   align-items: center;
-  padding: 1rem;
+  padding: 0.6rem 1rem;
   gap: 0.8rem;
   cursor: pointer;
 }
